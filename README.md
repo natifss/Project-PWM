@@ -1,6 +1,6 @@
 # Trabalho para a disciplina de Sistemas Embarcados utilizando as saídas PMW do Arduíno
 
-### 1. Introdução ao PWM (#introdução-ao-pwm)
+### 1. Introdução ao PWM
 
 PWM, do inglês Pulse Width Modulation, é uma técnica utilizada por sistemas digitais para variação do valor médio de uma forma de onda periódica. A técnica consiste em manter a frequência de uma onda quadrada fixa e variar o tempo que o sinal fica em nível lógico alto. Esse tempo é chamado de duty cycle, ou seja, o ciclo ativo da forma de onda.
 
@@ -8,7 +8,7 @@ Analisando as formas de onda nota-se que a frequência da forma de onda tem o me
 
 ![PWM-ARDUINO-01](https://github.com/natifss/Project-PWM/assets/119085630/9a994927-6d0c-4311-93da-0e896f60b1bd)
 
-### 2. Componentes necessários (#componentes-necessários)
+### 2. Componentes necessários
 
 Além da Placa PWM, outros componentes que podem ser necessários incluem:
 ```sh
@@ -18,7 +18,7 @@ Além da Placa PWM, outros componentes que podem ser necessários incluem:
 - Resistores e Capacitores: Para ajustes e filtragem de sinais.
 - Cabos e Conectores: Para interconexão dos componentes.
 ```
-### 3. Esquemático (#esquemático)
+### 3. Esquemático
 
 ![Captura de tela 2024-05-21 201325](https://github.com/natifss/Project-PWM/assets/119085630/b80ee193-96c6-432f-aafd-86a7ecc8a8e7)
 
@@ -26,7 +26,7 @@ Além da Placa PWM, outros componentes que podem ser necessários incluem:
 
 ![Captura de tela 2024-05-21 215708](https://github.com/natifss/Project-PWM/assets/119085630/664977d4-693f-4081-9bae-fd7fbbc76a06)
 
-### 4. Código-fonte (#código-fonte)
+### 4. Código-fonte 
 ```sh
 #include <Arduino.h>
 
@@ -70,7 +70,7 @@ if(buttonState == HIGH && lastButtonState == LOW){
 lastButtonState = buttonState;
 }
 ```
-### 5. Instruções de montagem (#instruções-de-montagem)
+### 5. Instruções de montagem 
 
 Para a motagem do circuito foi utilizado:
 ```sh
@@ -96,7 +96,7 @@ Fizemos a conexão do pino 5V do Arduino à linha de alimentação positiva (+) 
 
 Feito todas as conexões no proteus fizemos a parte de codigo no vcode. Progrado toda a lógica do funcioanento passamos o codigo ao Protues e fizemos o teste de funcionamento. Se ao apertarmos o botão o relé ficar ligado, e se apertarmos o botão novamente o relé ficar desligado.
 
-### 6. Funcionamento do projeto (#funcionamento-do-projeto)
+### 6. Funcionamento do projeto 
 
 Este projeto usa a funcionalidade PWM do Arduino para controlar um motor com um botão. O motor inicia desligado e conforme for apertando o botão ele incia e vai diminuindo a velocidade do motor até parar.
 O código é composto por duas funções principais: setup() e loop(). A função setup() é executada uma vez quando o Arduino é ligado e configura o motor como saída. A função loop() executa continuamente, alternando a velocidade do motor com um sinal PWM
